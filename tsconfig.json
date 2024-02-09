@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    // Settings for Node.js >= 12.9.0
+    "lib": ["es2020"],
+    "module": "commonjs",
+    "target": "es2019",
+
+    // Enable super strict setting
+    "strict": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": false,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+
+    // Function code never has to be compiled outside zeit/ncc and ts-jest
+    "noEmit": true
+  },
+  "include": ["**/*.ts"]
+}
